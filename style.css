@@ -1,0 +1,20 @@
+body {
+  background-image: url(imgs/graphs.png);
+  font-family: "Chewy", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.top {
+  color: aliceblue;
+}
+.clear {
+  background-color: rgb(255, 143, 143);
+}
+.clear:hover {
+  background-color: rgb(253, 94, 94);
+}
+.clear:active {
+  background-color: rgb(255, 39, 68);
+  color: rgb(255, 232, 232);
+}
