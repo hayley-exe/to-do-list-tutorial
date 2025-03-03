@@ -40,7 +40,15 @@ function displayTasks() {
             'align-items-center'
         )
 
-        li.innerHTML = `${task} <button class='btn btn-dark btn-sm' onclick='removeTask(${index})'> √ </button>`
+        li.innerHTML = `${task} <div class="buttonContainer" onclick="removeTask(${index})">
+            <input type="checkbox" class="checkbox-wrapper-63">
+            <div class="checkbox-wrapper-63">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>`
 
         //Append the new task in the task list
         taskList.appendChild(li)
