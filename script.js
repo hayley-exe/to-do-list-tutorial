@@ -41,17 +41,18 @@ function displayTasks() {
         )
 
         li.innerHTML = `${task} <div class="buttonContainer" onclick="removeTask(${index})">
-            <input type="checkbox" class="checkbox-wrapper-63">
-            <div class="checkbox-wrapper-63">
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-            </div>
-        </div>`
+        <input type="checkbox" class="checkbox-wrapper-63">
+        <div class="checkbox-wrapper-63">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </div>`
 
         //Append the new task in the task list
         taskList.appendChild(li)
+
 
     })
 }
@@ -64,7 +65,7 @@ function removeTask(index) {
 }
 
 //Event listener for the "Clear All Tasks" button
-document.getElementById('clearTasksBtn').addEventListener('click', function () {
+document.getElementById('clearTaskBtn').addEventListener('click', function () {
     //Empty task array to remove all tasks
     tasks = []
     //Call the function to update the task list display
