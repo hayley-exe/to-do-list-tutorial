@@ -17,8 +17,8 @@ body {
   background-color: rgb(253, 94, 94);
 }
 
-#clearTaskBtn:active {
-  background-color: rgb(255, 39, 68);
+.clear:active {
+  background-color: rgb(255, 39, 68) !important;
   color: rgb(255, 232, 232);
 }
 
