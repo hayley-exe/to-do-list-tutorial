@@ -65,10 +65,27 @@ function removeTask(index) {
 }
 
 //Event listener for the "Clear All Tasks" button
-document.getElementById('clearTaskBtn').addEventListener('click', function () {
+document.getElementById('clearTasksBtn').addEventListener('click', function () {
     //Empty task array to remove all tasks
     tasks = []
     //Call the function to update the task list display
     displayTasks()
+})
+window.addEventListener('keydown', (event) => {
+    if (event.key == 'Enter') {
+        let taskInput = document.getElementById('taskInput').value
+
+        //Check if taskInput has value(content)
+        if (taskInput) {
+            //Add the new task to the tasks array
+            tasks.push(taskInput)
+
+            //Clear the input field after adding task
+            document.getElementById('taskInput').value = ''
+
+            //Call function to update the task list display
+            displayTasks()
+        }
+    }
 })
 
